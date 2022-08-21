@@ -160,12 +160,22 @@ img {
     margin: .75rem 0;
 }
 
-.home__button {
+.home__buttonS {
     margin-top: 2rem;
     display: inline-block;
     background-color: var(--text-color);
     color: black;
     padding: .80rem 1.5rem;
+    border-radius: 3rem;
+    transition: .4s;
+}
+
+.home__buttonA {
+    margin-top: 2rem;
+    display: inline-block;
+    background-color: var(--text-color);
+    color: black;
+    padding: .80rem 2rem;
     border-radius: 3rem;
     transition: .4s;
 }
