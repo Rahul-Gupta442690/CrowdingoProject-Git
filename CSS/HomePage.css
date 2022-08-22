@@ -162,6 +162,7 @@ img {
 
 .home__buttonS {
     margin-top: 2rem;
+    margin-left: 1rem;
     display: inline-block;
     background-color: var(--text-color);
     color: black;
