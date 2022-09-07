@@ -1,0 +1,488 @@
+/* ------BODY SECTION -----------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  overflow: auto;
+}
+
+/* -----NAVIGATION SECTION--------- */
+.navigation {
+  background-color: #3de0aa;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  margin: 0 8%;
+}
+
+/* -----wave_queue_wrapper SECTION--------- */
+.wqw {
+  height: 385px;
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+.wave {
+  max-width: 100%;
+  height: auto;
+  transform: rotate(180deg);
+  height: 385px;
+  width: 460px;
+  float: right;
+  z-index: -1;
+  margin-right: 8%;
+  opacity: 0.9;
+  border-bottom-left-radius: 5px;
+}
+.img_wrapper {
+  margin: 0 8%;
+}
+.queue-img {
+  max-width: 100%;
+  height: auto;
+  width: 385px;
+  height: 385px;
+  z-index: -1;
+}
+.wrapper {
+  position: absolute;
+  transform: translate(100%, -160%);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+.container {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  font-size: 15px;
+  border-radius: 0.5em;
+  background-color: #21242b;
+  border-bottom: 10px solid #38d39f;
+}
+.fa-solid {
+  color: #38d39f;
+  font-size: 2em;
+  text-align: center;
+}
+span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 1;
+}
+/* -----wave_form_card SECTION--------- */
+.wfc {
+  height: auto;
+  width: 100%;
+  margin: 5rem 0;
+}
+.waveC {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  height: 557px;
+  width: 557px;
+  z-index: 0;
+  opacity: 0.9;
+  border-bottom-left-radius: 5px;
+}
+.form_card {
+  margin: 0 8%;
+  height: 557px;
+}
+
+/* -----FORM SECTION--------- */
+
+.login-contentF {
+  margin: 0 5% 0 0;
+  display: flex;
+  float: right;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  width: 40%;
+}
+
+form {
+  font-family: "Poppins", sans-serif;
+  width: 415px;
+  margin: auto;
+}
+
+.login-contentF h2 {
+  margin: 10px 0;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-contentF .input-divF {
+  position: relative;
+  display: grid;
+  grid-template-columns: 7% 93%;
+  margin: 15px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.login-contentF .input-div.oneF {
+  margin-top: 0;
+}
+
+.iF {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iF i {
+  transition: 0.3s;
+}
+
+.input-divF > div {
+  position: relative;
+  height: 45px;
+}
+
+.input-divF > div > h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.input-divF:before,
+.input-divF:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #38d39f;
+  transition: 0.4s;
+}
+
+.input-divF:before {
+  right: 50%;
+}
+
+.input-divF:after {
+  left: 50%;
+}
+
+.input-divF.focus:before,
+.input-divF.focus:after {
+  width: 50%;
+}
+
+.input-divF.focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-divF.focus > .iF > i {
+  color: #38d39f;
+}
+
+.input-divF > div > input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: "Poppins", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btnF {
+  display: block;
+  width: 50%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 0.5rem 6.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btnF:hover {
+  background-position: right;
+}
+
+/* -----CARD SECTION--------- */
+
+.containerC {
+  position: relative;
+  width: 310px;
+  padding: 0px;
+  margin-left: 110px;
+  padding-top: 58px;
+  display: flex;
+}
+
+.containerC .cardC {
+  position: relative;
+  width: 270px;
+  height: 365px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.containerC:hover .cardC {
+  filter: blur(20px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.containerC .cardC:hover {
+  filter: blur(0px);
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.containerC .cardC .circleC {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+}
+.containerC .cardC .circleC h2 {
+  color: #fff;
+  font-size: 4.5em;
+  padding: 30px 0;
+}
+
+.containerC .cardC .contentC {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+.containerC .cardC .contentC p {
+  color: #666;
+}
+
+.containerC .cardC .contentC a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.containerC .cardC:nth-child(1) .circleC,
+.containerC .cardC:nth-child(1) .contentC a {
+  background: #38d39f;
+}
+@media screen and (max-width: 1450px){
+  .wrapper{
+    transform: translate(65%, -160%);
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .wqw {
+    height: 300px;
+  }
+  .wave {
+    width: 300px;
+    height: 300px;
+  }
+  .queue-img {
+    width: 300px;
+    height: 300px;
+  }
+  .wrapper {
+    transform: translate(85%, -150%);
+    width: 40%;
+  }
+  .container {
+    width: 7rem;
+    height: 9rem;
+  }
+  .fa-solid {
+    font-size: 1.75em;
+  }
+  span.num {
+    font-size: 2em;
+  }
+  span.text {
+    font-size: 0.9em;
+  }
+  .wfc {
+    margin-bottom: 3rem;
+  }
+  .waveC {
+    width: 400px;
+    height: 400px;
+    margin-top: 157px;
+  }
+  .login-contentF {
+    margin: 2.1% 2%;
+  }
+  .login-contentF .input-divF {
+    margin: 10px 0;
+  }
+  .containerC {
+    width: 270px;
+    margin-left: 80px;
+    padding-top: 100px;
+  }
+  .containerC .cardC {
+    width: 230px;
+    height: 320px;
+  }
+  .containerC .cardC .circleC {
+    clip-path: circle(120px at center 0);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .wqw {
+    height: 300px;
+  }
+  .wave {
+    width: 250px;
+    height: 275px;
+  }
+  .queue-img {
+    width: 275px;
+    height: 275px;
+  }
+  .wrapper {
+    transform: translate(110%, -140%);
+    width: 35%;
+    gap: 10px;
+  }
+  .container {
+    width: 7rem;
+    height: 9rem;
+  }
+  .fa-solid {
+    font-size: 1.75em;
+  }
+  span.num {
+    font-size: 2em;
+  }
+  span.text {
+    font-size: 0.9em;
+  }
+  .wfc {
+    margin-bottom: 0;
+  }
+  .waveC {
+    width: 350px;
+    height: 350px;
+    margin-top: 170px;
+  }
+  .login-contentF {
+    margin: 0;
+  }
+  .login-contentF h2{
+    font-size: 2rem;
+  }
+  .login-contentF .input-divF {
+    margin: 10px 0;
+  }
+  .containerC {
+    width: 270px;
+    margin-left: 65px;
+    padding-top: 80px;
+  }
+  .containerC .cardC {
+    width: 230px;
+    height: 320px;
+  }
+  .containerC .cardC .circleC {
+    clip-path: circle(120px at center 0);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .wave {
+    display: none;
+  }
+  .queue-img {
+    width: 70%;
+    margin: 0px 12.5vw;
+  }
+  .wrapper {
+    transform: translate(0, 0);
+    margin-top: 20px;
+    width: 84%;
+    gap: 10px;
+  }
+  .wfc {
+    margin-top: 13rem;
+  }
+  .login-contentF {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  .form_card {
+    margin-right: 12%;
+  }
+  .waveC {
+    display: none;
+  }
+  .containerC {
+    margin-left: 0;
+    padding-top: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 360px){
+  .queue-img{
+    width: 100%;
+    margin: 0;
+  }
+  .btnF{
+    margin: 0.5rem 4.5rem;
+  }
+}

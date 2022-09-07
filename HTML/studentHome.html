@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crowdingo</title>
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/ac7b2a5beb.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/CSS/studentHome.css" />
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand mb-0 h1" href="">
+                <img src="/IMAGES/group.png" alt="" width="30" height="30" class="d-inline-block align-text-top" />
+                Crowdingo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="con nav-link" href="">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="con nav-link" href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="wave_queue_wrapper wqw">
+        <img class="wave" src="/IMAGES/wave.png" alt="" />
+        <div class="img_wrapper">
+            <div class="queue_img">
+                <img class="queue-img" src="/IMAGES/queue.jpg" alt="queue_img">
+            </div>
+            <div class="wrapper">
+                <div class="container">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span class="num">00</span>
+                    <span class="text">Counter 1</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span class="num">00</span>
+                    <span class="text">Counter 2</span>
+                </div>
+
+                <div class="container">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span class="num">00</span>
+                    <span class="text">Counter 3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wave_form_card wfc">
+        <div class="form_card">
+            <div class="login-contentF">
+                <form action="index.html">
+                    <h2 class="titleF">BOOK YOUR SLOT</h2>
+                    <div class="input-divF one">
+                        <div class="iF">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="divF">
+                            <h5>Name</h5>
+                            <input type="text" class="input" />
+                        </div>
+                    </div>
+                    <div class="input-divF one">
+                        <div class="iF">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="divF">
+                            <h5>Roll No.</h5>
+                            <input type="number" class="input" />
+                        </div>
+                    </div>
+                    <div class="input-divF one">
+                        <div class="iF">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="divF">
+                            <h5>ERP Id</h5>
+                            <input type="number" class="input" />
+                        </div>
+                    </div>
+                    <div class="input-divF one">
+                        <div class="iF">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="divF">
+                            <h5>Course</h5>
+                            <input type="text" class="input" />
+                        </div>
+                    </div>
+                    <div class="input-divF one">
+                        <div class="iF">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="divF">
+                            <h5>Branch</h5>
+                            <input type="text" class="input" />
+                        </div>
+                    </div>
+                    <div class="input-divF pass">
+                        <div class="iF">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="divF">
+                            <h5>Password</h5>
+                            <input type="password" class="input" />
+                        </div>
+                    </div>
+                    <input type="submit" class="btnF" value="Book" />
+                </form>
+            </div>
+            <img class="waveC" src="/IMAGES/wave.png" alt="" />
+            <div class="containerC">
+                <div class="cardC">
+                    <div class="circleC">
+                        <h2>01</h2>
+                    </div>
+                    <div class="contentC">
+                        <p>
+                            Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#"> CANCEL </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="/JS/studentHome.js"></script>
+</body>
+
+</html>
